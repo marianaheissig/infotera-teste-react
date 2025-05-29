@@ -1,7 +1,7 @@
 .inputs {
   display: flex;
   background-color: #ffffff;
-  width: 85%;
+  width: 82%;
   padding: 1rem 1rem;
   margin: 1rem 8rem;
   border-radius: 1rem;
@@ -70,6 +70,7 @@
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  z-index: 3;
 }
 
 .peopleRow {
@@ -111,13 +112,13 @@
 
 .apply button {
   background-color: transparent;
-      border: 1px solid #0080ff;
-      border-radius: 2rem;
-      cursor: pointer;
-      width: 6rem;
-      height: 2rem;
-      margin-top: 1rem;
-      color: #0080ff;
-      font-size: 1rem;
-      font-weight: 600;
+  border: 1px solid #0080ff;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 6rem;
+  height: 2rem;
+  margin-top: 1rem;
+  color: #0080ff;
+  font-size: 1rem;
+  font-weight: 600;
 }

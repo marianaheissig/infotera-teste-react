@@ -13,13 +13,10 @@ export default function Input() {
   const [location, setLocation] = useState(inputData.location || null);
   const [startDate, setStartDate] = useState(inputData.startDate || "");
   const [endDate, setEndDate] = useState(inputData.endDate || "");
-  const [people, setPeople] = useState(
-    inputData.people || { adults: 0, children: 0 }
-  );
+  const [people, setPeople] = useState(inputData.people || { adults: 0, children: 0 });
   const [showPeopleMenu, setShowPeopleMenu] = useState(false);
-  const [suggestions, setSuggestions] = useState<
-    { label: string; id: number; name: string; region: string; type: string }[]
-  >([]);
+  const [suggestions, setSuggestions] = useState<{ label: string; id: number; name: string; region: string; type: string }[]>([]);
+  const [minDateStart, setMinDateStart] = useState<string>();
 
   useEffect(() => {
     axios.get(`${baseUrl}/suggestions`).then((response) => {
@@ -28,6 +25,7 @@ export default function Input() {
         ...item,
       }));
       setSuggestions(formatted);
+      date();
     });
   }, []);
 
@@ -49,6 +47,11 @@ export default function Input() {
     setPeople((prev) => ({ ...prev, [type]: Math.max(0, prev[type] - 1) }));
   };
 
+  function date() {
+    const today = new Date().toISOString().split("T")[0];
+    setMinDateStart(today);
+  }
+
   return (
     <div className={styles.inputs}>
       <div className={`${styles.input} ${styles.firstInput}`}>
@@ -60,20 +63,20 @@ export default function Input() {
         </div>
         <Autocomplete
           options={suggestions}
-           sx={{
-          '& .MuiOutlinedInput-root': {
-           '& fieldset': {
-             border: 'none',
-             height: '1rem'
-              } }} }
+          sx={{
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                border: "none",
+                height: "1rem",
+              },
+            },
+          }}
           getOptionLabel={(option) => option.name} // ou option.label, depende
           onChange={(event, newValue) => {
             setLocation(newValue);
           }}
           value={location}
-          renderInput={(params) => (
-            <TextField {...params} />
-          )}
+          renderInput={(params) => <TextField {...params} />}
         />
       </div>
 
@@ -87,6 +90,7 @@ export default function Input() {
         <input
           type="date"
           id="startDate"
+          min={minDateStart}
           value={startDate}
           className={styles.inputField}
           onChange={(e) => setStartDate(e.target.value)}

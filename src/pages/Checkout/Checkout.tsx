@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Checkout = () => {
   const navigate = useNavigate();
   const { hotelData, roomData, inputData, peopleInfo, setPeopleInfo } = useSharedData();
+  
   const [tax, setTax] = useState<number>();
   const [totalPriceTax, setTotalPriceTax] = useState<number>();
   const [totalPeople, setTotalPeople] = useState<number>();
@@ -25,7 +26,11 @@ const Checkout = () => {
   function calculatePrice() {
     const calculatedPeople =
       inputData.people.adults + inputData.people.children;
-    const totalDays = Math.floor((new Date(inputData.endDate).getTime() -new Date(inputData.startDate).getTime()) /(1000 * 3600 * 24));
+    const totalDays = Math.floor(
+      (new Date(inputData.endDate).getTime() -
+        new Date(inputData.startDate).getTime()) /
+        (1000 * 3600 * 24)
+    );
     const totalPrice = roomData.price.amount * calculatedPeople * totalDays;
     const calculatedTax = totalPrice * 0.08;
     setTotalPeople(calculatedPeople);
@@ -47,7 +52,7 @@ const Checkout = () => {
       peoples: guestsNames,
     };
     setPeopleInfo(bookingData);
-    navigate(`/success`)
+    navigate(`/success`);
   }
 
   return (

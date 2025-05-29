@@ -1,7 +1,7 @@
 .menuContainer {
   font-family: "Titillium Web", sans-serif;
   background: white;
-  border: 1px solid #BFCCD9;
+  border: 1px solid #bfccd9;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 16px;
@@ -26,14 +26,14 @@
 .clear {
   cursor: pointer;
   font-size: 1rem;
-  color: #0080FF;
+  color: #0080ff;
   display: flex;
   align-items: center;
 }
 
 .hotel {
   margin-top: 5px;
-  border-bottom: 1px solid #BFCCD9;
+  border-bottom: 1px solid #bfccd9;
   padding-bottom: 1rem;
 }
 
@@ -43,18 +43,18 @@
 }
 
 .hotel input {
-  border: 1px solid #BFCCD9;
+  border: 1px solid #bfccd9;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   margin-top: 5px;
 }
 
 .hotel input::placeholder {
-  color: #BFCCD9;
+  color: #bfccd9;
 }
 
 hr {
-  background-color: #BFCCD9;
+  background-color: #bfccd9;
   height: 1px;
   border: none;
 }
@@ -84,12 +84,12 @@ hr {
 }
 
 .checkbox input[type="checkbox"] {
-  accent-color: #0080FF;
+  accent-color: #0080ff;
 }
 
 .slider {
   position: relative;
-  height: 40px; 
+  height: 40px;
 }
 
 .thumb {
@@ -98,7 +98,7 @@ hr {
   pointer-events: none;
   position: absolute;
   width: 100%;
-  height: 40px; 
+  height: 40px;
   margin: 0;
   background: none;
   top: 0;
@@ -108,7 +108,7 @@ hr {
 
 .thumb::-webkit-slider-runnable-track {
   height: 4px;
-  background: #0080FF;
+  background: #0080ff;
   border-radius: 4px;
   margin-top: 18px;
 }
@@ -119,11 +119,11 @@ hr {
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: #0080FF;
+  background: #0080ff;
   border: none;
-  box-shadow: 0 0 1px 1px #0080FF;
+  box-shadow: 0 0 1px 1px #0080ff;
   cursor: pointer;
-  margin-top: -7px; 
+  margin-top: -7px;
   pointer-events: all;
   position: relative;
 }

@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { FaRegTrashAlt } from "react-icons/fa";
 
-import styles from './Filter.module.css'
-
+import styles from "./Filter.module.css";
 
 interface StarOption {
   value: number;
@@ -23,9 +22,9 @@ interface Filters {
   stars: number[];
 }
 
-const Filter: React.FC<FilterProps> = ({ starOptions, onFilter, onClose }) => {
+const Filter: React.FC<FilterProps> = ({ starOptions, onFilter }) => {
   const [filters, setFilters] = useState<Filters>({
-    name: '',
+    name: "",
     minPrice: 0,
     maxPrice: 1000,
     stars: [],
@@ -36,7 +35,7 @@ const Filter: React.FC<FilterProps> = ({ starOptions, onFilter, onClose }) => {
   }, [filters]);
 
   function clearFilter() {
-    const cleared = { name: '', minPrice: 0, maxPrice: 1000, stars: [] };
+    const cleared = { name: "", minPrice: 0, maxPrice: 1000, stars: [] };
     setFilters(cleared);
   }
 
@@ -57,7 +56,7 @@ const Filter: React.FC<FilterProps> = ({ starOptions, onFilter, onClose }) => {
         <div className={styles.clear} onClick={clearFilter}>
           <FaRegTrashAlt />
           Limpar filtros
-          </div>
+        </div>
       </div>
 
       <div className={styles.hotel}>
@@ -78,26 +77,26 @@ const Filter: React.FC<FilterProps> = ({ starOptions, onFilter, onClose }) => {
           <span>R$ {filters.maxPrice}</span>
         </div>
         <div className={styles.slider}>
-            <input
-              type="range"
-              min={92}
-              max={400}
-              value={filters.minPrice}
-              className={styles.thumb}
-              onChange={(e) =>
-                setFilters({ ...filters, minPrice: Number(e.target.value) })
-              }
-            />
-            <input
-              type="range"
-              min={92}
-              max={400}
-              value={filters.maxPrice}
-              className={styles.thumb}
-              onChange={(e) =>
-                setFilters({ ...filters, maxPrice: Number(e.target.value) })
-              }
-            />
+          <input
+            type="range"
+            min={92}
+            max={400}
+            value={filters.minPrice}
+            className={styles.thumb}
+            onChange={(e) =>
+              setFilters({ ...filters, minPrice: Number(e.target.value) })
+            }
+          />
+          <input
+            type="range"
+            min={92}
+            max={400}
+            value={filters.maxPrice}
+            className={styles.thumb}
+            onChange={(e) =>
+              setFilters({ ...filters, maxPrice: Number(e.target.value) })
+            }
+          />
         </div>
       </div>
 
@@ -115,7 +114,6 @@ const Filter: React.FC<FilterProps> = ({ starOptions, onFilter, onClose }) => {
               />
               {star.label}
             </label>
-           
           </div>
         ))}
       </div>

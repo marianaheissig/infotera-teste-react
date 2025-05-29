@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 type PeopleType = { adults: number; children: number };
 
@@ -17,13 +17,12 @@ type InputData = {
 };
 
 type PeopleInfo = {
-    contact: string;
-    emailContact: string;
-    phoneContact: string;
-    obsContact: string | null;
-    peoples: any
-
-} ;
+  contact: string;
+  emailContact: string;
+  phoneContact: string;
+  obsContact: string | null;
+  peoples: any;
+};
 
 type SharedData = {
   inputData: InputData;
@@ -31,7 +30,7 @@ type SharedData = {
   roomData: any;
   peopleInfo: PeopleInfo;
 
-  setInputData: (data: SharedData['inputData']) => void;
+  setInputData: (data: SharedData["inputData"]) => void;
   setHotelData: (data: any) => void;
   setRoomData: (data: any) => void;
   setPeopleInfo: (data: any) => void;
@@ -39,13 +38,17 @@ type SharedData = {
 
 const SharedDataContext = createContext<SharedData | undefined>(undefined);
 
-export const SharedDataProvider = ({ children }: { children: React.ReactNode }) => {
+export const SharedDataProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   const [inputData, setInputData] = useState<InputData>({
     location: null,
-    startDate: '',
-    endDate: '',
-    people: { adults: 0, children: 0 }
-    });
+    startDate: "",
+    endDate: "",
+    people: { adults: 0, children: 0 },
+  });
   const [hotelData, setHotelData] = useState<any>(null);
   const [roomData, setRoomData] = useState<any>(null);
   const [peopleInfo, setPeopleInfo] = useState<any>(null);
@@ -60,7 +63,7 @@ export const SharedDataProvider = ({ children }: { children: React.ReactNode }) 
         setInputData,
         setHotelData,
         setRoomData,
-        setPeopleInfo
+        setPeopleInfo,
       }}
     >
       {children}
@@ -71,7 +74,9 @@ export const SharedDataProvider = ({ children }: { children: React.ReactNode }) 
 export const useSharedData = () => {
   const context = useContext(SharedDataContext);
   if (!context) {
-    throw new Error('useSharedData precisa ser usado com um SharedDataProvider');
+    throw new Error(
+      "useSharedData precisa ser usado com um SharedDataProvider"
+    );
   }
   return context;
 };

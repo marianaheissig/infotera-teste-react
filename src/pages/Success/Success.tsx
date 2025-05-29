@@ -1,4 +1,3 @@
-
 import { useSharedData } from "../../context/SharedData";
 import styles from "./Success.module.css";
 
@@ -19,7 +18,12 @@ const Success = () => {
             <p>Hospedes</p>
             {peopleInfo?.peoples?.map((people: any, index: any) => (
               <div key={index} className={styles.room}>
-               <p>Nome: <span>{people.firstName} {people.lastName}</span></p>
+                <p>
+                  Nome:{" "}
+                  <span>
+                    {people.firstName} {people.lastName}
+                  </span>
+                </p>
               </div>
             ))}
           </div>

@@ -1,7 +1,7 @@
 .main {
   background-color: #fff;
   border-radius: 1rem;
-  margin: 1rem 8rem;
+  margin: 1rem 9.1rem;
   padding: 1.2rem;
 }
 
@@ -15,10 +15,9 @@
   width: 30rem;
 }
 
-
 .title {
   font-size: 1.5rem;
-  color: #00264D;
+  color: #00264d;
   font-weight: 600;
   margin: 0;
 }
@@ -32,7 +31,7 @@
 
 .starsIcon {
   margin-top: 5px;
-  color: #F2BF09;
+  color: #f2bf09;
 }
 
 .description {
@@ -47,7 +46,7 @@
 .roomsInfo p {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #00264D;
+  color: #00264d;
 }
 
 .room {
@@ -74,24 +73,23 @@ p.noRefundable {
   align-items: center;
   gap: 0rem;
   font-size: 0.9rem;
-
 }
 
 .refundable,
 .refundableIcon,
 p.refundable {
-  color: #0080FF;
+  color: #0080ff;
 }
 
 .noRefundable,
 .noRefundableIcon,
 p.noRefundable {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 p.refundable svg,
 p.noRefundable svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .roomBooking {
@@ -107,7 +105,7 @@ p.noRefundable svg {
 }
 
 .value {
-  color: #0080FF;
+  color: #0080ff;
 }
 
 .value span {
@@ -121,7 +119,7 @@ p.noRefundable svg {
 }
 
 .roomBooking button {
-  background-color: #0080FF;
+  background-color: #0080ff;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;

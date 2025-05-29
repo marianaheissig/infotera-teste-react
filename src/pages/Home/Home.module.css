@@ -13,9 +13,13 @@
   text-align: center;
 }
 
-.first { color: #00264D; }
-.highlight {color: #0080FF; }
+.first {
+  color: #00264d;
+}
+.highlight {
+  color: #0080ff;
+}
 
 .bigInput {
-    width: 100%;
+  width: 100%;
 }

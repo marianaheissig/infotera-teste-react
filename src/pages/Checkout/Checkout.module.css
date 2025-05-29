@@ -78,24 +78,23 @@ p.noRefundable {
   align-items: center;
   gap: 0rem;
   font-size: 0.9rem;
-
 }
 
 .refundable,
 .refundableIcon,
 p.refundable {
-  color: #0080FF;
+  color: #0080ff;
 }
 
 .noRefundable,
 .noRefundableIcon,
 p.noRefundable {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 p.refundable svg,
 p.noRefundable svg {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .price {

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaStar, FaFilter } from "react-icons/fa";
+import { useSharedData } from "../../context/SharedData";
+
 import styles from "./Search.module.css";
 import Input from "../../components/Input/Input";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { FaStar, FaFilter } from "react-icons/fa";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import Filter from "../../components/Filter/Filter";
-import { useSharedData } from "../../context/SharedData";
 
 export default function Search() {
   const navigate = useNavigate();
@@ -16,10 +17,8 @@ export default function Search() {
   const [hotelsFiltered, setHotelsFiltered] = useState<any[]>([]);
   const [info, setInfo] = useState<any>({});
   const [isFilterOn, setIsFilterOn] = useState(false);
-  const [starOptions, setStarOptions] = useState<
-    { value: number ; label: string; count: number }[]
-  >([]);
-  const {inputData} = useSharedData()
+  const [starOptions, setStarOptions] = useState< { value: number; label: string; count: number }[] >([]);
+  const { inputData } = useSharedData();
 
   useEffect(() => {
     axios.get(`${baseUrl}/hotels`).then((response: any) => {
