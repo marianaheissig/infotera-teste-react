@@ -1,0 +1,129 @@
+.menuContainer {
+  font-family: "Titillium Web", sans-serif;
+  background: white;
+  border: 1px solid #BFCCD9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 250px;
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.header p {
+  font-weight: 600;
+  color: #00264d;
+  margin: 0;
+}
+
+.clear {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #0080FF;
+  display: flex;
+  align-items: center;
+}
+
+.hotel {
+  margin-top: 5px;
+  border-bottom: 1px solid #BFCCD9;
+  padding-bottom: 1rem;
+}
+
+.hotel p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.hotel input {
+  border: 1px solid #BFCCD9;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-top: 5px;
+}
+
+.hotel input::placeholder {
+  color: #BFCCD9;
+}
+
+hr {
+  background-color: #BFCCD9;
+  height: 1px;
+  border: none;
+}
+
+.titlePanel {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  color: #00264d;
+  font-size: 1rem;
+}
+
+.price,
+.stars {
+  width: 100%;
+}
+
+.labelSlider {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  color: #00264d;
+}
+
+.starCheck {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox input[type="checkbox"] {
+  accent-color: #0080FF;
+}
+
+.slider {
+  position: relative;
+  height: 40px; 
+}
+
+.thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 40px; 
+  margin: 0;
+  background: none;
+  top: 0;
+  left: 0;
+  outline: none;
+}
+
+.thumb::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #0080FF;
+  border-radius: 4px;
+  margin-top: 18px;
+}
+
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #0080FF;
+  border: none;
+  box-shadow: 0 0 1px 1px #0080FF;
+  cursor: pointer;
+  margin-top: -7px; 
+  pointer-events: all;
+  position: relative;
+}

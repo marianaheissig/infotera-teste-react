@@ -1,0 +1,39 @@
+.main {
+  background-color: rgba(18, 57, 82, 0.95);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigtext {
+  width: 30%;
+  font-size: 2rem;
+}
+
+.infos {
+  width: 30%;
+}
+
+.hotel,
+.guests,
+.contact {
+  margin-bottom: 1rem;
+}
+
+.hotel p,
+.guests p,
+.contact p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hotel p span,
+.guests p span,
+.contact p span {
+  font-size: 1.3rem;
+  font-weight: 400;
+}

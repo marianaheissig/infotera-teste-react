@@ -1,0 +1,41 @@
+.main {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 9rem;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00264d;
+}
+
+.homeBackground {
+  background-color: transparent;
+}
+
+.allBackground {
+  background-color: white;
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #698096;
+}
+
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+svg {
+  margin-right: 5px;
+}
+
+

@@ -1,0 +1,132 @@
+.main {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 1rem 8rem;
+  padding: 1.2rem;
+}
+
+.hotelInfo {
+  display: flex;
+  gap: 1rem;
+}
+
+.hotelInfo img {
+  border-radius: 1rem;
+  width: 30rem;
+}
+
+
+.title {
+  font-size: 1.5rem;
+  color: #00264D;
+  font-weight: 600;
+  margin: 0;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  color: #698096;
+  margin: 0;
+}
+
+.starsIcon {
+  margin-top: 5px;
+  color: #F2BF09;
+}
+
+.description {
+  margin: 0;
+  color: #698096;
+}
+
+.roomsInfo {
+  margin-top: 3rem;
+}
+
+.roomsInfo p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #00264D;
+}
+
+.room {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  background-color: #e3ebf3;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.roomInfo p {
+  margin: 0;
+}
+
+.refundable,
+.refundableIcon,
+.noRefundable,
+.noRefundableIcon,
+p.refundable,
+p.noRefundable {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+  font-size: 0.9rem;
+
+}
+
+.refundable,
+.refundableIcon,
+p.refundable {
+  color: #0080FF;
+}
+
+.noRefundable,
+.noRefundableIcon,
+p.noRefundable {
+  color: #FF0000;
+}
+
+p.refundable svg,
+p.noRefundable svg {
+    margin-right: 5px;
+}
+
+.roomBooking {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.price p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.value {
+  color: #0080FF;
+}
+
+.value span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.subtext {
+  text-align: center;
+  color: #698096;
+}
+
+.roomBooking button {
+  background-color: #0080FF;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  height: 2.5rem;
+  cursor: pointer;
+}

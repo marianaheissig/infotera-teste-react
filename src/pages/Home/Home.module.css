@@ -1,0 +1,21 @@
+.main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigText {
+  font-size: 4rem;
+  width: 55%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.first { color: #00264D; }
+.highlight {color: #0080FF; }
+
+.bigInput {
+    width: 100%;
+}

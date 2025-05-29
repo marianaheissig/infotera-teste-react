@@ -1,0 +1,166 @@
+.main {
+  margin: 1rem 8rem;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main p,
+.main .guests .hotel p,
+.main .booking-guest p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00264d;
+  margin: 0;
+}
+
+.resume {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.hotel,
+.bookingGuest,
+.overview {
+  margin-top: 1rem;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+}
+
+.guests {
+  width: 70%;
+}
+
+.overview {
+  width: 30%;
+  height: fit-content;
+}
+
+.overview p.title {
+  color: #0080ff;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #e3ebf3;
+}
+
+.hotelInfo .name {
+  color: #00264d;
+}
+
+.hotelInfo .address,
+.hotelInfo .roomName {
+  font-size: 1rem;
+  color: #698096;
+  font-weight: 300;
+  margin: 0;
+}
+
+.roomInfo {
+  margin-top: 1rem;
+  border-bottom: 1px solid #e3ebf3;
+}
+
+.roomInfo .roomName {
+  color: #000;
+  font-weight: 400;
+}
+
+.roomInfo p {
+  margin: 0;
+}
+
+.refundable,
+.refundableIcon,
+.noRefundable,
+.noRefundableIcon,
+p.refundable,
+p.noRefundable {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+  font-size: 0.9rem;
+
+}
+
+.refundable,
+.refundableIcon,
+p.refundable {
+  color: #0080FF;
+}
+
+.noRefundable,
+.noRefundableIcon,
+p.noRefundable {
+  color: #FF0000;
+}
+
+p.refundable svg,
+p.noRefundable svg {
+    margin-right: 5px;
+}
+
+.price {
+  margin-top: 1rem;
+}
+
+.taxes,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taxes p.text,
+.total p.text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #00264d;
+}
+
+.taxes p.value,
+.total p.value {
+  font-size: 1rem;
+}
+
+.total p.totalValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0080ff;
+}
+
+.overview button {
+  margin-top: 1rem;
+  background-color: #0080ff;
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fields {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.singleField .input,
+.fields .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input label {
+  font-weight: 600;
+}
+
+.input input,
+.input textarea {
+  border: 1px solid #bfccd9;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
